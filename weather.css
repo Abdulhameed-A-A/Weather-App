@@ -94,3 +94,85 @@ button:hover {
     color: #fff;
     margin-top: 10px;
 }
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; 
+        padding: 20px;
+        margin: 0;
+    }
+
+    #weather-container {
+        width: 90%;
+        max-width: 100%; 
+        margin: 0 auto;
+        transform: none; 
+        position: static;
+    }
+
+
+    #temp-div p {
+        font-size: 50px;
+        margin-top: -20px;
+    }
+
+    #weather-icon {
+        width: 150px;
+        height: 150px;
+    }
+
+    #hourly-forecast {
+        margin-top: 30px;
+        padding-bottom: 10px;
+        -webkit-overflow-scrolling: touch; 
+    }
+
+    .hourly-item {
+        min-width: 70px; 
+        margin-right: 8px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    #weather-container {
+        padding: 15px;
+    }
+
+    #temp-div p {
+        font-size: 42px;
+    }
+
+    #weather-icon {
+        width: 130px;
+        height: 130px;
+    }
+
+    .hourly-item {
+        min-width: 65px;
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    #weather-container {
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #temp-div p {
+        font-size: 38px;
+    }
+
+    .hourly-item {
+        min-width: 60px;
+    }
+}
